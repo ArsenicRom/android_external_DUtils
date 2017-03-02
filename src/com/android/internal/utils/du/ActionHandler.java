@@ -742,6 +742,7 @@ public class ActionHandler {
             am.moveTaskToFront(lastTask.id, ActivityManager.MOVE_TASK_NO_USER_ACTION,
                     getAnimation(context).toBundle());
         }
+        cancelPreloadRecentApps();
     }
 
     private static ActivityOptions getAnimation(Context context) {
